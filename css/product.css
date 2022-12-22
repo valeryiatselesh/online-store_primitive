@@ -133,7 +133,7 @@
 	background-color: var(--background-color);
 	transition: all 300ms ease;
 	cursor: pointer;
-
+	color: #000;
  }
  .quantity__container input:hover{
 	background-color: #000;
@@ -147,6 +147,7 @@
 	display: flex;
 	justify-content:center;
 	align-items: center;
+	color: #000;
  }
  .quantity__container > div{
 	font-size: 16px;
@@ -253,6 +254,7 @@
 	text-transform: uppercase;
 	padding: 12px 51px;
 	background-color: var(--background-color);
+	color: #000;
 }
 
 
