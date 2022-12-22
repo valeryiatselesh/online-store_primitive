@@ -1,0 +1,148 @@
+.footer {
+	padding: 0px 100px 64px 100px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 133%;
+	text-transform: uppercase;
+}
+.footer__container {
+	border-top: 1px solid #000;
+	padding-top: 32px;
+	display: flex;
+}
+.footer__sign {
+	flex: 1 1 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.footer__copywrite {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 16px;
+}
+.footer__menu-1 {
+	flex: 1 1 25%;
+}
+.footer__body {
+}
+.footer__list{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.footer__list li{
+	padding-bottom: 12px;
+}
+.footer__list li:last-child{
+	padding-bottom: 0;
+}
+.footer__link{
+	position: relative;
+	transition: 0.5s;
+	color: var(--primary-color);
+}
+.footer__link::after{
+	position: absolute;
+	content: "";
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #000000;
+	transform: scaleX(0);
+	transform-origin: center;
+	transition: transform 0.25s;
+}
+.footer__link:hover::after{
+	transform: scaleX(1);
+	transform-origin: center;
+}
+.footer__menu-2 {
+	flex: 1 1 25%;
+}
+.footer__follow {
+	flex: 1 1 25%;
+}
+.follow__title {
+	padding-bottom: 16px;
+}
+.follow__body {
+}
+.follow__list {
+	display: flex;
+}
+.follow__list li{
+	padding-right: 32px;
+	padding-bottom: 10px;
+}
+.follow__list li:last-child{
+	padding: 0;
+}
+@media (max-width: 1023.98px){
+	.footer {
+		padding: 0px 48px 64px 48px;
+	}
+	.footer__menu-2{
+		order: 2;
+	}
+	.footer__menu-1{
+		order: 1;
+	}
+	.footer__follow{
+		order: 3;
+	}
+	.footer__sign{
+		order: 4;
+		flex-direction: row;
+		justify-content: flex-start;
+		flex: 1 1 50%;
+	}
+	.footer__container{
+		flex-wrap: wrap;
+	}
+	.footer__logo{
+		padding-right: 135px;
+	}
+	.footer__list li{
+		padding-right: 10px;
+	}
+	.footer__follow{
+		padding-bottom: 48px;
+	}
+}
+
+@media (max-width: 767.98px){
+	.footer {
+		padding: 0px 16px 32px 16px;
+	}
+	.footer__container{
+		flex-wrap: wrap;
+	}
+	.footer__menu-2{
+		order: 1;
+		padding-bottom: 48px;
+	}
+	.footer__menu-1{
+		order: 2;
+		padding-bottom: 48px;
+	}
+	.footer__sign{
+		order: 4;
+	}
+	.footer__follow{
+		order: 3;
+	}
+	.footer__sign{
+		flex-direction: column;
+	}
+	.footer__link{
+		font-size: 14px;
+	}
+	.follow__title {
+		font-size: 14px;
+	}
+	.footer__logo{
+		padding-bottom: 16px;
+	}
+}

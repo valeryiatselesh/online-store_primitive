@@ -1,0 +1,31 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+/* Main*/
+.main{
+	padding: 80px 100px 240px 100px;
+	flex: 1 1 auto;
+}
+.product__items {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -12px;
+	height: 100%;
+}
+@media (max-width: 1023.98px){
+	.main{
+		padding: 80px 48px 240px 48px;
+	}
+}
+@media (max-width: 768.98px){
+	.main{
+		padding: 40px 16px 240px 16px;
+	}
+	.product__items {
+		margin: 0px -8px;
+	}
+}
+
