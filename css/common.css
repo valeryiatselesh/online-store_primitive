@@ -1,25 +1,11 @@
 @charset "UTF-8";
-
-/* Zeroing style */
-@import url('/css/null.css');
-
-/* Header */
-@import url('/css/header.css');
-
-/* Footer */
-@import url('/css/footer.css');
-
-/* Buttons */
-@import url('/css/elements/button_arrow.css');
-@import url('/css/elements/button_slide_up.css');
-
 /* Fonts */
 @font-face {
 	font-family: 'Neue Machina'; 
 	font-style: normal;
 	font-weight: normal;
 	src: local('Neue Machina'),
-		url("/fonts/NeueMachina-Regular.otf"); 
+	 url("../fonts/NeueMachinaRegular.woff")  format("woff"); 
 }
 
 :root{
@@ -110,13 +96,10 @@ body._lock{
 	  transform: translateX(-50%) translateY(-50%) rotateZ(360deg);
 	}
  }
-
- 
  .loaded_hiding .preloader {
 	transition: 0.3s opacity;
 	opacity: 0;
  }
- 
  .loaded .preloader {
 	display: none;
  }
